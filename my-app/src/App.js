@@ -1,24 +1,26 @@
 import React from 'react';
-import './App.css';
+import ReactDOM from 'react-dom';
+import Carousel from './Carousel';
+
+import firstImage from './images/first.jpg';
+import secondImage from './images/second.jpg';
+import thirdImage from './images/third.jpg';
+
+const images = [firstImage, secondImage, thirdImage];
 
 function App() {
     return (
         <div className="App">
-            <header>
-                <h1>Тест заголовок</h1>
-            </header>
-            <div className="container">
-                <nav>
-                    <p>Тест бокова навігація</p>
-                </nav>
-                <main>
-                    <div>
-                        <p>Тест центральний контент</p>
-                    </div>
-                </main>
-            </div>
+            <Carousel images={images} />
         </div>
     );
 }
 
 export default App;
+
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
