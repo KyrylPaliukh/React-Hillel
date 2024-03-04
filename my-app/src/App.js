@@ -1,27 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ListGroup from './ListGroup';
 
-function Collapse({ text, opened }) {
-    const [isOpen, setIsOpen] = useState(opened);
-
-    const handleToggle = () => {
-        setIsOpen(!isOpen);
-    };
-
+const App = () => {
     return (
-        <div>
-            <p>
-                <a className="btn btn-primary" href="#" onClick={handleToggle} role="button" aria-expanded={isOpen ? 'true' : 'false'}>
-                    Link with href
-                </a>
-            </p>
-            <div className={`collapse ${isOpen ? 'show' : ''}`}>
-                <div className="card card-body">
-                    {text}
-                </div>
-            </div>
+        <div className="container">
+            <h1>List Group Component Demo</h1>
+            <ListGroup>
+                <p>one</p>
+                <p>two</p>
+            </ListGroup>
         </div>
     );
-}
+};
 
-export default Collapse;
-
+export default App;
