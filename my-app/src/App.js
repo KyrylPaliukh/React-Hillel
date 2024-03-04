@@ -1,14 +1,11 @@
 import React from 'react';
-import ListGroup from './ListGroup';
+import BtnGroup from './BtnGroup';
 
 const App = () => {
     return (
         <div className="container">
-            <h1>List Group Component Demo</h1>
-            <ListGroup>
-                <p>one</p>
-                <p>two</p>
-            </ListGroup>
+            <h1>Button Group Component</h1>
+            <BtnGroup />
         </div>
     );
 };
