@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Progress from './Progress';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Progress percentage={40} />
     </React.StrictMode>,
     document.getElementById('root')
 );
