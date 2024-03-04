@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Alert from './Alert';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Alert type="warning" text="what is love?" />
     </React.StrictMode>,
     document.getElementById('root')
 );
