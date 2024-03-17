@@ -1,11 +1,10 @@
-import '@toast-ui/editor/dist/toastui-editor.css';
-
-import ReactDOM from 'react-dom';
 import React from 'react';
-
-import MarkdownEditor from './MarkdownEditor.jsx';
+import ReactDOM from 'react-dom';
+import PostCatalog from './PostCatalog';
 
 ReactDOM.render(
-    <MarkdownEditor onContentChange={console.log} />,
-    document.getElementById('container'),
+    <React.StrictMode>
+        <PostCatalog />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
