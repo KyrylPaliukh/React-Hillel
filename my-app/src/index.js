@@ -1,10 +1,11 @@
-import React from 'react';
+import '@toast-ui/editor/dist/toastui-editor.css';
+
 import ReactDOM from 'react-dom';
-import MyForm from './MyForm';
+import React from 'react';
+
+import MarkdownEditor from './MarkdownEditor.jsx';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <MyForm />
-    </React.StrictMode>,
-    document.getElementById('root')
+    <MarkdownEditor onContentChange={console.log} />,
+    document.getElementById('container'),
 );
